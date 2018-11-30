@@ -13,7 +13,7 @@
         Background="{DynamicResource MaterialDesignPaper}"
         FontFamily="{DynamicResource MaterialDesignFont}"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="768" Width="1366">
     <Grid>
         <Button Content="Button" HorizontalAlignment="Left" Margin="381,166,0,0" VerticalAlignment="Top" Width="75"/>
 
