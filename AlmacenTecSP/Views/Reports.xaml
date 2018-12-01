@@ -109,12 +109,12 @@
                 </Border>
             </materialDesign:DialogHost>
         </WrapPanel>
-        <TextBlock FontSize="22" Margin="48,22,841,584" Grid.Row="1"><Run Text="Fecha:"/></TextBlock>
-        <DatePicker FontSize="22" 
+        <TextBlock Foreground="Black" FontSize="22" Margin="48,22,841,584" Grid.Row="1"><Run Text="Fecha:"/></TextBlock>
+        <DatePicker Foreground="Black" FontSize="22" 
             materialDesign:HintAssist.Hint="Fecha"
             Style="{StaticResource MaterialDesignFloatingHintDatePicker}" Margin="134,5,685,593" Grid.Row="1" />
-        <TextBlock FontSize="22" Margin="354,17,535,589" Grid.Row="1"><Run Text="Hasta:"/></TextBlock>
-        <DatePicker FontSize="22" 
+        <TextBlock Foreground="Black" FontSize="22" Margin="354,17,535,589" Grid.Row="1"><Run Text="Hasta:"/></TextBlock>
+        <DatePicker Foreground="Black" FontSize="22" 
             materialDesign:HintAssist.Hint="Fecha"
             Style="{StaticResource MaterialDesignFloatingHintDatePicker}" Margin="440,0,379,598" Grid.Row="1" />
     </Grid>

@@ -165,22 +165,22 @@
                         </WrapPanel>
 
                         <StackPanel>
-                            <TextBlock FontSize="20" Margin="20,10,20,0">Nombre:</TextBlock>
+                            <TextBlock FontSize="20" Foreground="Black" Margin="20,10,20,0">Nombre:</TextBlock>
                             <TextBox x:Name="textBox" HorizontalAlignment="Left" VerticalAlignment="Bottom"  Height="35" Margin="19,0,0,0" TextWrapping="Wrap" 
-                                    FontSize="18" Text="Articulo..." Width="462"/>
+                                    FontSize="18" Foreground="Black" Text="Articulo..." Width="462"/>
 
-                            <TextBlock FontSize="20" Margin="20,10,20,0"><Run Text="Fecha:"/></TextBlock>
+                            <TextBlock FontSize="20" Foreground="Black" Margin="20,10,20,0"><Run Text="Fecha:"/></TextBlock>
                             <DatePicker FontSize="18" 
-                              materialDesign:HintAssist.Hint="Fecha"
+                              materialDesign:HintAssist.Hint="Fecha" Foreground="Black"
                               Style="{StaticResource MaterialDesignFloatingHintDatePicker}" Margin="20,00,200,0" Height="40" />
-                            <TextBlock FontSize="20" Margin="20,10,20,0"><Run Text="Empleado:"/></TextBlock>
+                            <TextBlock FontSize="20" Foreground="Black" Margin="20,10,20,0"><Run Text="Empleado:"/></TextBlock>
                             <TextBox x:Name="textBox_Copy1" HorizontalAlignment="Left" VerticalAlignment="Bottom"  Height="35" Margin="19,0,0,0" TextWrapping="Wrap" 
-                                FontSize="18" Text="Nombre..." Width="462"/>
-                            <TextBlock FontSize="20" Margin="20,10,20,0"><Run Text="Concepto:"/></TextBlock>
-                            <TextBox x:Name="textBox_Copy2" HorizontalAlignment="Left" VerticalAlignment="Bottom"  Height="35" Margin="19,0,0,0" TextWrapping="Wrap" 
+                                FontSize="18" Foreground="Black" Text="Nombre..." Width="462"/>
+                            <TextBlock FontSize="20" Foreground="Black" Margin="20,10,20,0"><Run Text="Concepto:"/></TextBlock>
+                            <TextBox x:Name="textBox_Copy2" Foreground="Black" HorizontalAlignment="Left" VerticalAlignment="Bottom"  Height="35" Margin="19,0,0,0" TextWrapping="Wrap" 
                                 FontSize="18" Text="Descripción..." Width="462"/>
-                            <TextBlock FontSize="20" Margin="20,10,20,0"><Run Text="Recibio:"/></TextBlock>
-                            <TextBox x:Name="textBox_Copy4" HorizontalAlignment="Left" VerticalAlignment="Bottom"  Height="35" Margin="19,0,0,0" TextWrapping="Wrap" 
+                            <TextBlock FontSize="20" Foreground="Black" Margin="20,10,20,0"><Run Text="Recibio:"/></TextBlock>
+                            <TextBox x:Name="textBox_Copy4" Foreground="Black" HorizontalAlignment="Left" VerticalAlignment="Bottom"  Height="35" Margin="19,0,0,0" TextWrapping="Wrap" 
                                 FontSize="18" Text="Solicitante..." Width="462"/>
                         </StackPanel>
                         <Button
@@ -201,7 +201,7 @@
             <materialDesign:PackIcon
                     Kind="FastForward"
                     Height="50"
-                    Width="50" />
+                    Width="50" Background="Black" />
         </Button>
 
 

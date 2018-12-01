@@ -106,19 +106,19 @@
                         </WrapPanel>
 
                         <StackPanel>
-                            <TextBlock FontSize="20" Margin="20,10,462,0">Nombre:</TextBlock>
-                            <TextBox x:Name="textBox" HorizontalAlignment="Left" VerticalAlignment="Bottom"  Height="35" Margin="19,0,0,0" TextWrapping="Wrap" 
+                            <TextBlock Foreground="Black" FontSize="20" Margin="20,10,462,0">Nombre:</TextBlock>
+                            <TextBox x:Name="textBox" Foreground="Black" HorizontalAlignment="Left" VerticalAlignment="Bottom"  Height="35" Margin="19,0,0,0" TextWrapping="Wrap" 
                                     FontSize="18" Text="Articulo..." Width="462"/>
-                            <TextBlock FontSize="20" Margin="20,10,462,0"><Run Text="Cantidad:"/></TextBlock>
-                            <TextBox x:Name="textBox_Copy1" HorizontalAlignment="Left" VerticalAlignment="Bottom"  Height="35" Margin="19,0,0,0" TextWrapping="Wrap" 
+                            <TextBlock Foreground="Black" FontSize="20" Margin="20,10,462,0"><Run Text="Cantidad:"/></TextBlock>
+                            <TextBox x:Name="textBox_Copy1" Foreground="Black" HorizontalAlignment="Left" VerticalAlignment="Bottom"  Height="35" Margin="19,0,0,0" TextWrapping="Wrap" 
                                 FontSize="18" Text="Cantidad..." Width="462"/>
-                            <TextBlock FontSize="20" Margin="20,10,462,0"><Run Text="Unidad:"/></TextBlock>
+                            <TextBlock Foreground="Black" FontSize="20" Margin="20,10,462,0"><Run Text="Unidad:"/></TextBlock>
                             <ComboBox x:Name="comboBox" HorizontalAlignment="Left" VerticalAlignment="Bottom"  Height="35" Margin="19,0,0,0" 
                                      Width="200"/>
-                            <TextBlock FontSize="20" Margin="20,10,462,0"><Run Text="Cantidad minima:"/></TextBlock>
-                            <TextBox x:Name="textBox_Copy" HorizontalAlignment="Left" VerticalAlignment="Bottom"  Height="35" Margin="19,0,0,0" TextWrapping="Wrap" 
+                            <TextBlock FontSize="20" Foreground="Black" Margin="20,10,462,0"><Run Text="Cantidad minima:"/></TextBlock>
+                            <TextBox x:Name="textBox_Copy" Foreground="Black" HorizontalAlignment="Left" VerticalAlignment="Bottom"  Height="35" Margin="19,0,0,0" TextWrapping="Wrap" 
                                 FontSize="18" Text="Cantidad..." Width="462"/>
-                            <TextBlock FontSize="20" Margin="20,10,462,0"><Run Text="Categoría:"/></TextBlock>
+                            <TextBlock Foreground="Black" FontSize="20" Margin="20,10,462,0"><Run Text="Categoría:"/></TextBlock>
                             <ComboBox x:Name="comboBox_Copy" HorizontalAlignment="Left" VerticalAlignment="Bottom"  Height="35" Margin="19,0,0,0" 
                                 Width="200"/>
                         </StackPanel>

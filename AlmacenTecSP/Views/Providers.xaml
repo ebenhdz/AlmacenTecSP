@@ -151,11 +151,11 @@
                         </WrapPanel>
 
                         <StackPanel>
-                            <TextBlock FontSize="20" Margin="20,20,20,0">Nombtre:</TextBlock>
+                            <TextBlock FontSize="20" Foreground="Black" Margin="20,20,20,0">Nombtre:</TextBlock>
                             <TextBox x:Name="textBox" HorizontalAlignment="Left" VerticalAlignment="Bottom"  Height="51" Margin="19,0,0,0" TextWrapping="Wrap" 
-                                    FontSize="18" Text="Proveedor..." Width="462"/>
-                            <TextBlock FontSize="20" Margin="20,20,20,0"><Run Text="Cantidad:"/></TextBlock>
-                            <TextBox x:Name="textBox_Copy" HorizontalAlignment="Left" VerticalAlignment="Bottom"  Height="51" Margin="19,0,0,0" TextWrapping="Wrap" 
+                                    FontSize="18" Foreground="Black" Text="Proveedor..." Width="462"/>
+                            <TextBlock Foreground="Black" FontSize="20" Margin="20,20,20,0"><Run Text="Cantidad:"/></TextBlock>
+                            <TextBox x:Name="textBox_Copy" Foreground="Black" HorizontalAlignment="Left" VerticalAlignment="Bottom"  Height="51" Margin="19,0,0,0" TextWrapping="Wrap" 
                                 FontSize="18" Text="Cantidad..." Width="462"/>
                         </StackPanel>
                         <Button
