@@ -135,9 +135,7 @@
                             <TextBlock Margin="16" FontSize="20" Foreground="Black" >Configuración</TextBlock>
                         </materialDesign:ColorZone>
 
-                        <WrapPanel HorizontalAlignment="Left" Height="3" VerticalAlignment="Top" Width="483" Grid.Row="0" Background="White" Margin="10">
-                            <TextBox Text="Proveedor..." Margin="10 0" materialDesign:HintAssist.Hint="Proveedor..." FontSize="20" Width="409" Height="55"/>
-                        </WrapPanel>
+                        <WrapPanel HorizontalAlignment="Left" Height="3" VerticalAlignment="Top" Width="483" Grid.Row="0" Background="White" Margin="10"/>
 
                         <StackPanel/>
 
