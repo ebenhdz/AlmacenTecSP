@@ -122,15 +122,6 @@
     <Folder Include="Views\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="DB\AlmacenTecSP.mdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="DB\AlmacenTecSP_log.ldf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <DependentUpon>AlmacenTecSP.mdf</DependentUpon>
-    </Content>
-  </ItemGroup>
-  <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
       <Visible>False</Visible>
       <ProductName>Microsoft .NET Framework 4.6.1 %28x86 and x64%29</ProductName>
