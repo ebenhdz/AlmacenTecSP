@@ -76,23 +76,23 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Views\Categories.xaml.cs">
-      <DependentUpon>Categories.xaml</DependentUpon>
+    <Compile Include="Views\Categorias.xaml.cs">
+      <DependentUpon>Categorias.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\Inventary2.xaml.cs">
-      <DependentUpon>Inventary2.xaml</DependentUpon>
+    <Compile Include="Views\Inventario.xaml.cs">
+      <DependentUpon>Inventario.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\Inventary.xaml.cs">
-      <DependentUpon>Inventary.xaml</DependentUpon>
+    <Compile Include="Views\Inventario2.xaml.cs">
+      <DependentUpon>Inventario2.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\Loans.xaml.cs">
-      <DependentUpon>Loans.xaml</DependentUpon>
+    <Compile Include="Views\Prestamos.xaml.cs">
+      <DependentUpon>Prestamos.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\Providers.xaml.cs">
-      <DependentUpon>Providers.xaml</DependentUpon>
+    <Compile Include="Views\Proveedores.xaml.cs">
+      <DependentUpon>Proveedores.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\Reports.xaml.cs">
-      <DependentUpon>Reports.xaml</DependentUpon>
+    <Compile Include="Views\Reportes.xaml.cs">
+      <DependentUpon>Reportes.xaml</DependentUpon>
     </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -106,27 +106,27 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="Views\Categories.xaml">
+    <Page Include="Views\Categorias.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\Inventary2.xaml">
+    <Page Include="Views\Inventario.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\Inventary.xaml">
+    <Page Include="Views\Inventario2.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\Loans.xaml">
+    <Page Include="Views\Prestamos.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\Providers.xaml">
+    <Page Include="Views\Proveedores.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\Reports.xaml">
+    <Page Include="Views\Reportes.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

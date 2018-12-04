@@ -16,11 +16,11 @@ using System.Windows.Shapes;
 namespace AlmacenTecSP.Views
 {
     /// <summary>
-    /// Lógica de interacción para Providers.xaml
+    /// Lógica de interacción para Proveedores.xaml
     /// </summary>
-    public partial class Providers : Page
+    public partial class Proveedores : Page
     {
-        public Providers()
+        public Proveedores()
         {
             InitializeComponent();
         }
