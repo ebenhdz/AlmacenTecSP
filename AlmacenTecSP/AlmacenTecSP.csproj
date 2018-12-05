@@ -14,7 +14,6 @@
     <WarningLevel>4</WarningLevel>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -27,6 +26,7 @@
     <MapFileExtensions>true</MapFileExtensions>
     <ApplicationRevision>0</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
@@ -58,7 +58,6 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
-    <Reference Include="System.Data.Linq" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -77,6 +76,24 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Views\Categorias.xaml.cs">
+      <DependentUpon>Categorias.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Inventario.xaml.cs">
+      <DependentUpon>Inventario.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Inventario2.xaml.cs">
+      <DependentUpon>Inventario2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Prestamos.xaml.cs">
+      <DependentUpon>Prestamos.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Proveedores.xaml.cs">
+      <DependentUpon>Proveedores.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Reportes.xaml.cs">
+      <DependentUpon>Reportes.xaml</DependentUpon>
+    </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -89,43 +106,32 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Views\Categorias.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Inventario.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Inventario2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Prestamos.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Proveedores.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Reportes.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Models\Articulo.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Articulo.dbml</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Categorias.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Categorias.dbml</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Consumibles.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Consumibles.dbml</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Entregablesdbml.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Entregablesdbml.dbml</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Prestamo.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Prestamo.dbml</DependentUpon>
-    </Compile>
-    <Compile Include="Models\SalidaArticulo.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>SalidaArticulo.dbml</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Solicitud.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Solicitud.dbml</DependentUpon>
-    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -143,62 +149,6 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <None Include="Models\Articulo.dbml">
-      <Generator>MSLinqToSQLGenerator</Generator>
-      <LastGenOutput>Articulo.designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Models\Articulo.dbml.layout">
-      <DependentUpon>Articulo.dbml</DependentUpon>
-    </None>
-    <None Include="Models\Categorias.dbml">
-      <Generator>MSLinqToSQLGenerator</Generator>
-      <LastGenOutput>Categorias.designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Models\Categorias.dbml.layout">
-      <DependentUpon>Categorias.dbml</DependentUpon>
-    </None>
-    <None Include="Models\Consumibles.dbml">
-      <Generator>MSLinqToSQLGenerator</Generator>
-      <LastGenOutput>Consumibles.designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Models\Consumibles.dbml.layout">
-      <DependentUpon>Consumibles.dbml</DependentUpon>
-    </None>
-    <None Include="Models\Entregablesdbml.dbml">
-      <Generator>MSLinqToSQLGenerator</Generator>
-      <LastGenOutput>Entregablesdbml.designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Models\Entregablesdbml.dbml.layout">
-      <DependentUpon>Entregablesdbml.dbml</DependentUpon>
-    </None>
-    <None Include="Models\Prestamo.dbml">
-      <Generator>MSLinqToSQLGenerator</Generator>
-      <LastGenOutput>Prestamo.designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Models\Prestamo.dbml.layout">
-      <DependentUpon>Prestamo.dbml</DependentUpon>
-    </None>
-    <None Include="Models\SalidaArticulo.dbml">
-      <Generator>MSLinqToSQLGenerator</Generator>
-      <LastGenOutput>SalidaArticulo.designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Models\SalidaArticulo.dbml.layout">
-      <DependentUpon>SalidaArticulo.dbml</DependentUpon>
-    </None>
-    <None Include="Models\Solicitud.dbml">
-      <Generator>MSLinqToSQLGenerator</Generator>
-      <LastGenOutput>Solicitud.designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Models\Solicitud.dbml.layout">
-      <DependentUpon>Solicitud.dbml</DependentUpon>
-    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -206,29 +156,14 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config">
-      <SubType>Designer</SubType>
-    </None>
+    <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Models\" />
     <Folder Include="ViewModels\" />
-    <Folder Include="Views\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="AlmacenTecSP.mdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="AlmacenTecSP_log.ldf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <DependentUpon>AlmacenTecSP.mdf</DependentUpon>
-    </Content>
-    <Content Include="DB\AlmacenTecSP.mdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="DB\AlmacenTecSP_log.ldf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <DependentUpon>AlmacenTecSP.mdf</DependentUpon>
-    </Content>
+    <Resource Include="icono-inventario-png.png" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
@@ -241,9 +176,6 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
-  </ItemGroup>
-  <ItemGroup>
-    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
