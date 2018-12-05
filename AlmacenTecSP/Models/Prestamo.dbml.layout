@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="Prestamo">
+  <DataContextMoniker Name="/PrestamoDataContext" />
+  <nestedChildShapes>
+    <classShape Id="b17e5bf9-4bf3-4efe-aa2b-0e1f89972ae0" absoluteBounds="4.75, 1.25, 2, 1.3862939453125">
+      <DataClassMoniker Name="/PrestamoDataContext/Prestamo" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d3db185a-8d03-4d4e-a8b4-64a56ecb0a02" absoluteBounds="4.765, 1.71, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

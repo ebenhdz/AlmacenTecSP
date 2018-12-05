@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="AlmacenTecSP" Class="ArticuloDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\AlmacenTecSP.mdf;Integrated Security=True;Connect Timeout=30" SettingsObjectName="AlmacenTecSP.Properties.Settings" SettingsPropertyName="AlmacenTecSPConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Articulo" Member="Articulos">
+    <Type Name="Articulo">
+      <Column Name="idArt" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="nombre" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="[cantidad ]" Member="cantidad_" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="unidad" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="codigo" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="fechEntrada" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="canntMinima" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="locacion" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="idCategoria" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+</Database>

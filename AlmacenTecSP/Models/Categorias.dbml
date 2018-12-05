@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="AlmacenTecSP" Class="CategoriasDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\AlmacenTecSP.mdf;Integrated Security=True;Connect Timeout=30" SettingsObjectName="AlmacenTecSP.Properties.Settings" SettingsPropertyName="AlmacenTecSPConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Categorias" Member="Categorias">
+    <Type Name="Categoria">
+      <Column Name="idCateg" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="nombre" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+</Database>
