@@ -20,11 +20,15 @@ namespace AlmacenTecSP
     /// </summary>
     public partial class MainWindow : Window
     {
-        
+        bool isAdd = false;
+        private BindingListCollectionView CustomerView;
+        CustomerDataContext dc = new CustomerDataContext();
         public MainWindow()
         {
             InitializeComponent();
-            
+            var items = dc.GetAllCustomers();
+            this.DataContext = items;
+            this.CustomerView = (BindingListCollectionView)(CollectionViewSource.GetDefaultView(items));
         }
         /// <summary>
         /// guardar campos llenos con el botn guardar
@@ -64,7 +68,9 @@ namespace AlmacenTecSP
  
             isAdd = false;
         }
-        //cancelar
+        /// <summary>
+        /// cancela la operacion
+        /// <summary>
          private void Cancel_Click(object sender, RoutedEventArgs e)
         {
             if(isAdd)
