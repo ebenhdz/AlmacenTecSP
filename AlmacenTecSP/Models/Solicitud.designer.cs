@@ -36,7 +36,7 @@ namespace AlmacenTecSP.Models
     #endregion
 		
 		public SolicitudDataContext() : 
-				base(global::AlmacenTecSP.Properties.Settings.Default.AlmacenTecSPConnectionString, mappingSource)
+				base(global::AlmacenTecSP.Properties.Settings.Default.AlmacenTecSPConnectionString1, mappingSource)
 		{
 			OnCreated();
 		}
@@ -71,15 +71,8 @@ namespace AlmacenTecSP.Models
 			{
 				return this.GetTable<Solicitud>();
 			}
-
 		}
-        public IEnumerable<Solicitud> GetAllCustomers()
-        {
-            var items = this.Solicituds.Select(item => item).OrderBy(item => item.nomreSolicitante);
-
-            return items;
-        }
-    }
+	}
 	
 	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.Solicitud")]
 	public partial class Solicitud : INotifyPropertyChanging, INotifyPropertyChanged

@@ -36,7 +36,7 @@ namespace AlmacenTecSP.Models
     #endregion
 		
 		public SalidaArticuloDataContext() : 
-				base(global::AlmacenTecSP.Properties.Settings.Default.AlmacenTecSPConnectionString, mappingSource)
+				base(global::AlmacenTecSP.Properties.Settings.Default.AlmacenTecSPConnectionString1, mappingSource)
 		{
 			OnCreated();
 		}
@@ -72,13 +72,7 @@ namespace AlmacenTecSP.Models
 				return this.GetTable<SalidaArticulo>();
 			}
 		}
-        public IEnumerable<SalidaArticulo> GetAllCustomers()
-        {
-            var items = this.SalidaArticulos.Select(item => item).OrderBy(item => item.idArt);
-
-            return items;
-        }
-    }
+	}
 	
 	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.SalidaArticulo")]
 	public partial class SalidaArticulo : INotifyPropertyChanging, INotifyPropertyChanged

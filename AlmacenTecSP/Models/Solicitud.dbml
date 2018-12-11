@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?><Database Name="AlmacenTecSP" Class="SolicitudDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
-  <Connection Mode="AppSettings" ConnectionString="Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\AlmacenTecSP.mdf;Integrated Security=True;Connect Timeout=30" SettingsObjectName="AlmacenTecSP.Properties.Settings" SettingsPropertyName="AlmacenTecSPConnectionString" Provider="System.Data.SqlClient" />
+  <Connection Mode="AppSettings" ConnectionString="Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\BD\AlmacenTecSP.mdf;Integrated Security=True" SettingsObjectName="AlmacenTecSP.Properties.Settings" SettingsPropertyName="AlmacenTecSPConnectionString1" Provider="System.Data.SqlClient" />
   <Table Name="dbo.Solicitud" Member="Solicituds">
     <Type Name="Solicitud">
       <Column Name="idSolicitud" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />

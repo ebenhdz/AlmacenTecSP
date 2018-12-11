@@ -77,44 +77,37 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Models\Articulo.designer.cs" />
-    <Compile Include="Models\Articulo1.designer.cs">
+    <Compile Include="Models\Articulo.designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Articulo.dbml</DependentUpon>
     </Compile>
-    <Compile Include="Models\Categorias.designer.cs" />
-    <Compile Include="Models\Categorias1.designer.cs">
+    <Compile Include="Models\Categorias.designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Categorias.dbml</DependentUpon>
     </Compile>
-    <Compile Include="Models\Consumibles.designer.cs" />
-    <Compile Include="Models\Consumibles1.designer.cs">
+    <Compile Include="Models\Consumibles.designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Consumibles.dbml</DependentUpon>
     </Compile>
-    <Compile Include="Models\Entregablesdbml.designer.cs" />
-    <Compile Include="Models\Entregablesdbml1.designer.cs">
+    <Compile Include="Models\Entregables.designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>Entregablesdbml.dbml</DependentUpon>
+      <DependentUpon>Entregables.dbml</DependentUpon>
     </Compile>
-    <Compile Include="Models\Prestamo.designer.cs" />
-    <Compile Include="Models\Prestamo1.designer.cs">
+    <Compile Include="Models\Prestamo.designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Prestamo.dbml</DependentUpon>
     </Compile>
-    <Compile Include="Models\SalidaArticulo.designer.cs" />
-    <Compile Include="Models\SalidaArticulo1.designer.cs">
+    <Compile Include="Models\SalidaArticulo.designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>SalidaArticulo.dbml</DependentUpon>
     </Compile>
-    <Compile Include="Models\Solicitud.designer.cs" />
-    <Compile Include="Models\Solicitud1.designer.cs">
+    <Compile Include="Models\Solicitud.designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Solicitud.dbml</DependentUpon>
@@ -194,7 +187,7 @@
     </EmbeddedResource>
     <None Include="Models\Articulo.dbml">
       <Generator>MSLinqToSQLGenerator</Generator>
-      <LastGenOutput>Articulo1.designer.cs</LastGenOutput>
+      <LastGenOutput>Articulo.designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
     <None Include="Models\Articulo.dbml.layout">
@@ -202,7 +195,7 @@
     </None>
     <None Include="Models\Categorias.dbml">
       <Generator>MSLinqToSQLGenerator</Generator>
-      <LastGenOutput>Categorias1.designer.cs</LastGenOutput>
+      <LastGenOutput>Categorias.designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
     <None Include="Models\Categorias.dbml.layout">
@@ -210,23 +203,23 @@
     </None>
     <None Include="Models\Consumibles.dbml">
       <Generator>MSLinqToSQLGenerator</Generator>
-      <LastGenOutput>Consumibles1.designer.cs</LastGenOutput>
+      <LastGenOutput>Consumibles.designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
     <None Include="Models\Consumibles.dbml.layout">
       <DependentUpon>Consumibles.dbml</DependentUpon>
     </None>
-    <None Include="Models\Entregablesdbml.dbml">
+    <None Include="Models\Entregables.dbml">
       <Generator>MSLinqToSQLGenerator</Generator>
-      <LastGenOutput>Entregablesdbml1.designer.cs</LastGenOutput>
+      <LastGenOutput>Entregables.designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="Models\Entregablesdbml.dbml.layout">
-      <DependentUpon>Entregablesdbml.dbml</DependentUpon>
+    <None Include="Models\Entregables.dbml.layout">
+      <DependentUpon>Entregables.dbml</DependentUpon>
     </None>
     <None Include="Models\Prestamo.dbml">
       <Generator>MSLinqToSQLGenerator</Generator>
-      <LastGenOutput>Prestamo1.designer.cs</LastGenOutput>
+      <LastGenOutput>Prestamo.designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
     <None Include="Models\Prestamo.dbml.layout">
@@ -234,7 +227,7 @@
     </None>
     <None Include="Models\SalidaArticulo.dbml">
       <Generator>MSLinqToSQLGenerator</Generator>
-      <LastGenOutput>SalidaArticulo1.designer.cs</LastGenOutput>
+      <LastGenOutput>SalidaArticulo.designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
     <None Include="Models\SalidaArticulo.dbml.layout">
@@ -242,7 +235,7 @@
     </None>
     <None Include="Models\Solicitud.dbml">
       <Generator>MSLinqToSQLGenerator</Generator>
-      <LastGenOutput>Solicitud1.designer.cs</LastGenOutput>
+      <LastGenOutput>Solicitud.designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
     <None Include="Models\Solicitud.dbml.layout">

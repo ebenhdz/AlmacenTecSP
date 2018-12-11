@@ -36,7 +36,7 @@ namespace AlmacenTecSP.Models
     #endregion
 		
 		public PrestamoDataContext() : 
-				base(global::AlmacenTecSP.Properties.Settings.Default.AlmacenTecSPConnectionString, mappingSource)
+				base(global::AlmacenTecSP.Properties.Settings.Default.AlmacenTecSPConnectionString1, mappingSource)
 		{
 			OnCreated();
 		}
@@ -72,13 +72,7 @@ namespace AlmacenTecSP.Models
 				return this.GetTable<Prestamo>();
 			}
 		}
-        public IEnumerable<Prestamo> GetAllCustomers()
-        {
-            var items = this.Prestamos.Select(item => item).OrderBy(item => item.idPrestamo);
-
-            return items;
-        }
-    }
+	}
 	
 	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.Prestamo")]
 	public partial class Prestamo : INotifyPropertyChanging, INotifyPropertyChanged

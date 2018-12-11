@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="Entregables">
+  <DataContextMoniker Name="/EntregablesDataContext" />
+  <nestedChildShapes>
+    <classShape Id="fab8b657-0398-4db3-b7fb-a024e06be03d" absoluteBounds="3.625, 1.125, 2, 1.1939925130208333">
+      <DataClassMoniker Name="/EntregablesDataContext/Entregable" />
+      <nestedChildShapes>
+        <elementListCompartment Id="dd7c57cb-5ad4-4643-a0dd-d56e51d55345" absoluteBounds="3.64, 1.585, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

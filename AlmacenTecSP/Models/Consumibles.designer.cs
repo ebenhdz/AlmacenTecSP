@@ -36,7 +36,7 @@ namespace AlmacenTecSP.Models
     #endregion
 		
 		public ConsumiblesDataContext() : 
-				base(global::AlmacenTecSP.Properties.Settings.Default.AlmacenTecSPConnectionString, mappingSource)
+				base(global::AlmacenTecSP.Properties.Settings.Default.AlmacenTecSPConnectionString1, mappingSource)
 		{
 			OnCreated();
 		}
@@ -72,13 +72,7 @@ namespace AlmacenTecSP.Models
 				return this.GetTable<Consumible>();
 			}
 		}
-        public IEnumerable<Consumible> GetAllCustomers()
-        {
-            var items = this.Consumibles.Select(item => item).OrderBy(item => item.idCateg);
-
-            return items;
-        }
-    }
+	}
 	
 	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.Consumibles")]
 	public partial class Consumible : INotifyPropertyChanging, INotifyPropertyChanged

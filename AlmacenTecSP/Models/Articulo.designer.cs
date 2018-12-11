@@ -36,7 +36,7 @@ namespace AlmacenTecSP.Models
     #endregion
 		
 		public ArticuloDataContext() : 
-				base(global::AlmacenTecSP.Properties.Settings.Default.AlmacenTecSPConnectionString, mappingSource)
+				base(global::AlmacenTecSP.Properties.Settings.Default.AlmacenTecSPConnectionString1, mappingSource)
 		{
 			OnCreated();
 		}

@@ -23,7 +23,7 @@ namespace AlmacenTecSP.Models
 	
 	
 	[global::System.Data.Linq.Mapping.DatabaseAttribute(Name="AlmacenTecSP")]
-	public partial class EntregablesdbmlDataContext : System.Data.Linq.DataContext
+	public partial class EntregablesDataContext : System.Data.Linq.DataContext
 	{
 		
 		private static System.Data.Linq.Mapping.MappingSource mappingSource = new AttributeMappingSource();
@@ -35,31 +35,31 @@ namespace AlmacenTecSP.Models
     partial void DeleteEntregable(Entregable instance);
     #endregion
 		
-		public EntregablesdbmlDataContext() : 
-				base(global::AlmacenTecSP.Properties.Settings.Default.AlmacenTecSPConnectionString, mappingSource)
+		public EntregablesDataContext() : 
+				base(global::AlmacenTecSP.Properties.Settings.Default.AlmacenTecSPConnectionString1, mappingSource)
 		{
 			OnCreated();
 		}
 		
-		public EntregablesdbmlDataContext(string connection) : 
+		public EntregablesDataContext(string connection) : 
 				base(connection, mappingSource)
 		{
 			OnCreated();
 		}
 		
-		public EntregablesdbmlDataContext(System.Data.IDbConnection connection) : 
+		public EntregablesDataContext(System.Data.IDbConnection connection) : 
 				base(connection, mappingSource)
 		{
 			OnCreated();
 		}
 		
-		public EntregablesdbmlDataContext(string connection, System.Data.Linq.Mapping.MappingSource mappingSource) : 
+		public EntregablesDataContext(string connection, System.Data.Linq.Mapping.MappingSource mappingSource) : 
 				base(connection, mappingSource)
 		{
 			OnCreated();
 		}
 		
-		public EntregablesdbmlDataContext(System.Data.IDbConnection connection, System.Data.Linq.Mapping.MappingSource mappingSource) : 
+		public EntregablesDataContext(System.Data.IDbConnection connection, System.Data.Linq.Mapping.MappingSource mappingSource) : 
 				base(connection, mappingSource)
 		{
 			OnCreated();
@@ -72,13 +72,7 @@ namespace AlmacenTecSP.Models
 				return this.GetTable<Entregable>();
 			}
 		}
-        public IEnumerable<Entregable> GetAllCustomers()
-        {
-            var items = this.Entregables.Select(item => item).OrderBy(item => item.idCateg);
-
-            return items;
-        }
-    }
+	}
 	
 	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.Entregables")]
 	public partial class Entregable : INotifyPropertyChanging, INotifyPropertyChanged
@@ -164,6 +158,12 @@ namespace AlmacenTecSP.Models
 				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
 			}
 		}
-	}
+        public IEnumerable<Entregable> GetAllCustomers()
+        {
+            var items = Etregables.Select(item => item).OrderBy(item => item.ContactName);
+
+            return items;
+        }
+    }
 }
 #pragma warning restore 1591
