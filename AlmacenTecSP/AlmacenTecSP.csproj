@@ -58,6 +58,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Data.Linq" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -76,6 +77,48 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Models\Articulo.designer.cs" />
+    <Compile Include="Models\Articulo1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Articulo.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Categorias.designer.cs" />
+    <Compile Include="Models\Categorias1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Categorias.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Consumibles.designer.cs" />
+    <Compile Include="Models\Consumibles1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Consumibles.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Entregablesdbml.designer.cs" />
+    <Compile Include="Models\Entregablesdbml1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Entregablesdbml.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Prestamo.designer.cs" />
+    <Compile Include="Models\Prestamo1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Prestamo.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SalidaArticulo.designer.cs" />
+    <Compile Include="Models\SalidaArticulo1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SalidaArticulo.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Solicitud.designer.cs" />
+    <Compile Include="Models\Solicitud1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Solicitud.dbml</DependentUpon>
+    </Compile>
     <Compile Include="Views\Categorias.xaml.cs">
       <DependentUpon>Categorias.xaml</DependentUpon>
     </Compile>
@@ -149,6 +192,62 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="Models\Articulo.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>Articulo1.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Models\Articulo.dbml.layout">
+      <DependentUpon>Articulo.dbml</DependentUpon>
+    </None>
+    <None Include="Models\Categorias.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>Categorias1.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Models\Categorias.dbml.layout">
+      <DependentUpon>Categorias.dbml</DependentUpon>
+    </None>
+    <None Include="Models\Consumibles.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>Consumibles1.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Models\Consumibles.dbml.layout">
+      <DependentUpon>Consumibles.dbml</DependentUpon>
+    </None>
+    <None Include="Models\Entregablesdbml.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>Entregablesdbml1.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Models\Entregablesdbml.dbml.layout">
+      <DependentUpon>Entregablesdbml.dbml</DependentUpon>
+    </None>
+    <None Include="Models\Prestamo.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>Prestamo1.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Models\Prestamo.dbml.layout">
+      <DependentUpon>Prestamo.dbml</DependentUpon>
+    </None>
+    <None Include="Models\SalidaArticulo.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>SalidaArticulo1.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Models\SalidaArticulo.dbml.layout">
+      <DependentUpon>SalidaArticulo.dbml</DependentUpon>
+    </None>
+    <None Include="Models\Solicitud.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>Solicitud1.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Models\Solicitud.dbml.layout">
+      <DependentUpon>Solicitud.dbml</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -159,7 +258,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Models\" />
     <Folder Include="ViewModels\" />
   </ItemGroup>
   <ItemGroup>
@@ -192,6 +290,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>AlmacenTecSP.mdf</DependentUpon>
     </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
