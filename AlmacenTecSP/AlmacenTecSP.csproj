@@ -77,35 +77,56 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Models\Articulo.cs">
+      <DependentUpon>Articulo.dbml</DependentUpon>
+    </Compile>
     <Compile Include="Models\Articulo.designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Articulo.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Categorias.cs">
+      <DependentUpon>Categorias.dbml</DependentUpon>
     </Compile>
     <Compile Include="Models\Categorias.designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Categorias.dbml</DependentUpon>
     </Compile>
+    <Compile Include="Models\Consumibles.cs">
+      <DependentUpon>Consumibles.dbml</DependentUpon>
+    </Compile>
     <Compile Include="Models\Consumibles.designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Consumibles.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Entregables.cs">
+      <DependentUpon>Entregables.dbml</DependentUpon>
     </Compile>
     <Compile Include="Models\Entregables.designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Entregables.dbml</DependentUpon>
     </Compile>
+    <Compile Include="Models\Prestamo.cs">
+      <DependentUpon>Prestamo.dbml</DependentUpon>
+    </Compile>
     <Compile Include="Models\Prestamo.designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Prestamo.dbml</DependentUpon>
     </Compile>
+    <Compile Include="Models\SalidaArticulo.cs">
+      <DependentUpon>SalidaArticulo.dbml</DependentUpon>
+    </Compile>
     <Compile Include="Models\SalidaArticulo.designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>SalidaArticulo.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Solicitud.cs">
+      <DependentUpon>Solicitud.dbml</DependentUpon>
     </Compile>
     <Compile Include="Models\Solicitud.designer.cs">
       <AutoGen>True</AutoGen>
