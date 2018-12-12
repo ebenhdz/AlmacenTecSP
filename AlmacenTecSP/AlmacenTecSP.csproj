@@ -290,6 +290,13 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Almacenmdf.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Almacenmdf_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>Almacenmdf.mdf</DependentUpon>
+    </Content>
     <Content Include="Views\NewFolder1\AlmacenTecSP.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
