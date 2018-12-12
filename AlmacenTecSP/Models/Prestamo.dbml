@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="AlmacenTecSP" Class="PrestamoDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\BD\AlmacenTecSP.mdf;Integrated Security=True" SettingsObjectName="AlmacenTecSP.Properties.Settings" SettingsPropertyName="AlmacenTecSPConnectionString1" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Prestamo" Member="Prestamos">
+    <Type Name="Prestamo">
+      <Column Name="idPrestamo" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="idSolicitud" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Entregado" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+</Database>
