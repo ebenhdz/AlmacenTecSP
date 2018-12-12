@@ -10,17 +10,16 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace AlmacenTecSP.Views
 {
     /// <summary>
-    /// Lógica de interacción para Categories.xaml
+    /// Lógica de interacción para NuevoProducto.xaml
     /// </summary>
-    public partial class Inventary2 : Page
+    public partial class NuevoProducto : Window
     {
-        public Inventary2()
+        public NuevoProducto()
         {
             InitializeComponent();
         }

@@ -16,13 +16,13 @@ using System.Windows.Shapes;
 namespace AlmacenTecSP.Views
 {
     /// <summary>
-    /// Lógica de interacción para Categories.xaml
+    /// Lógica de interacción para Home.xaml
     /// </summary>
-    public partial class Categories : Page
+    public partial class Home : Page
     {
-        public Categories()
+        public Home()
         {
             InitializeComponent();
-        }
+        }        
     }
 }

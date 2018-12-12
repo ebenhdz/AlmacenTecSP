@@ -1,0 +1,64 @@
+﻿<Page x:Class="AlmacenTecSP.Views.Inventario"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:AlmacenTecSP.Views"
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+      mc:Ignorable="d" 
+      d:DesignHeight="710" d:DesignWidth="1166"
+      Title="Inventario">
+    <StackPanel Width="800">
+        <DockPanel>
+            <Button Style="{StaticResource MaterialDesignRaisedDarkButton}" DockPanel.Dock="Right" Margin="72,0,0,0">Nuevo Producto</Button>
+            <ComboBox
+                materialDesign:HintAssist.Hint="Almacenamiento" DockPanel.Dock="Right" Width="100" Margin="16,0">
+                <ComboBoxItem>Almacen</ComboBoxItem>
+                <ComboBoxItem>Bodega</ComboBoxItem>
+                <ComboBoxItem>Todos</ComboBoxItem>
+            </ComboBox>
+            <materialDesign:ColorZone
+        Mode="Standard"
+        Padding="8 4 8 4"
+        CornerRadius="2"
+        Panel.ZIndex="1"
+        materialDesign:ShadowAssist.ShadowDepth="Depth1">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition
+              Width="Auto" />
+                        <ColumnDefinition
+              Width="*" />
+                        <ColumnDefinition
+              Width="Auto" />
+                    </Grid.ColumnDefinitions>
+                    <Button
+            Style="{DynamicResource MaterialDesignToolButton}">
+                        <materialDesign:PackIcon
+              Kind="Magnify"
+              Opacity=".56" />
+                    </Button>
+                    <TextBox
+            Grid.Column="1"
+            Margin="8 0 0 0"
+            materialDesign:HintAssist.Hint="Build a search bar"
+            materialDesign:TextFieldAssist.DecorationVisibility="Hidden"
+            BorderThickness="0"
+            MinWidth="200"
+            VerticalAlignment="Center" />
+
+                </Grid>
+            </materialDesign:ColorZone>
+        </DockPanel>
+        <ListView Margin="0, 8, 0, 0">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn
+                            Header="Nombre" />
+                    <GridViewColumn
+                            Header="Cantidad" />
+                </GridView>
+            </ListView.View>
+        </ListView>
+    </StackPanel>
+</Page>

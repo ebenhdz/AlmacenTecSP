@@ -10,13 +10,29 @@
         TextElement.FontSize="13"
         TextOptions.TextFormattingMode="Ideal"
         TextOptions.TextRenderingMode="Auto"
-        Background="{DynamicResource MaterialDesignPaper}"
+        Background="#F5F5F5"
         FontFamily="{DynamicResource MaterialDesignFont}"
         mc:Ignorable="d"
         Title="MainWindow" Height="768" Width="1366"
         WindowState="Maximized">
-    <Grid>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="381,166,0,0" VerticalAlignment="Top" Width="75"/>
-
-    </Grid>
+    <DockPanel>
+        <StackPanel DockPanel.Dock="Left" Width="200" Background="#263238">
+            <ListBox Name="MenuList" Foreground="White" Background="#263238" FontSize="16"
+                     SelectionChanged="Menu_SelectionChanged">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel Orientation="Horizontal">
+                            <materialDesign:PackIcon Kind="{Binding Icon}"/>
+                            <TextBlock Text="{Binding Title}" Margin="16,0,0,0"/>
+                        </StackPanel>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>                
+            </ListBox>
+        </StackPanel>
+        <StackPanel DockPanel.Dock="Top">
+            <TextBlock Padding="16" FontSize="22" Background="#FFF">Sistema Inventario</TextBlock>            
+            <Border BorderThickness="1" BorderBrush="#CCC"/>
+        </StackPanel>
+        <Frame x:Name="_mainFrame" NavigationUIVisibility="Hidden" Padding="16"/>
+    </DockPanel>
 </Window>

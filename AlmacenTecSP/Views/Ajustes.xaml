@@ -1,0 +1,28 @@
+﻿<Page x:Class="AlmacenTecSP.Views.Ajustes"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:AlmacenTecSP.Views"
+      mc:Ignorable="d" 
+      d:DesignHeight="710" d:DesignWidth="1166"
+      Title="Ajustes">
+
+    <StackPanel Width="800">
+        <DockPanel>
+            <TextBox>Categorias</TextBox>
+            <Button HorizontalAlignment="Right" Background="Red" BorderThickness="0">Nueva categoria</Button>
+        </DockPanel>        
+        <ListView Margin="0, 8, 0, 0">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Nombre" />
+                    <GridViewColumn Header="Cantidad" />
+                    <GridViewColumn Header="Entregable" />
+                    <GridViewColumn Header="Consumible" />
+                    <GridViewColumn Header="Accion" />
+                </GridView>
+            </ListView.View>
+        </ListView>
+    </StackPanel>
+</Page>
