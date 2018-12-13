@@ -9,59 +9,47 @@ namespace AlmacenTecSP.Models
     {
         private DataSet dataSet;
         private SqlDataAdapter adapter;
-        ConexionBD conexion;
+        private string[] parametros;
+        private string[] valores;
+        private int filasAfectadas;
+        ConexionBD conexionBD;
         public CategoriaModel()
         {
-            conexion = new ConexionBD();
+            conexionBD = new ConexionBD();
         }
-        public DataSet CargarCategorias(string queryString, string connectionString)
+        public DataSet CargarCategorias()
         {
-            dataSet = new DataSet();
-            SqlConnection conn = conexion.ConectarBD();
-            try
-            {
-                SqlCommand command = new SqlCommand(queryString, conn);
-                adapter = new SqlDataAdapter(command);
-
-                adapter.Fill(dataSet, "categoria");
-                return dataSet;
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.ToString(), "Error");
-                return dataSet = null;
-            }
-            finally
-            {
-                conexion.CerrarConn();
-            }
+            return conexionBD.EjecutarVista("vCategorias");
+            
         }
 
         public int NuevaCategoria(string nombre)
         {
-            int filas = 0;
-            string query = "INSERT INTO Categoria VALUES(@Nombre)";
-            SqlConnection conn = conexion.ConectarBD();
-
-            using (SqlCommand cmd = new SqlCommand(query))
-            {
-                    cmd.Parameters.AddWithValue("@Nombre", "Benito");
-                    cmd.Connection = conn;
-                try
-                {
-                    filas = cmd.ExecuteNonQuery();
-                } catch(Exception ex)
-                {
-                    MessageBox.Show(ex.Message);
-                }            
-            }
-            return filas;
+            parametros = new string[] {"nombre"};
+            valores = new string[]{nombre};
+            return conexionBD.EjecuctarProcedimientoAlmacenado("spInsertarCategoria", parametros, valores);
         }
 
         public int EliminarCategoria(string categoria)
         {
             int filas = 0;
-            adapter.Update(dataSet, "categoria");
+            adapter.Update(dataSet, "categorias");
+            return filas;
+        }
+
+        public int ActualizarCategoria(string nombre, int id)
+        {
+            int filas = 0;
+            string query = "UPDATE Categoria SET nombre=@Nombre, WHERE idCateg=@CategoriaId";
+            SqlConnection conn = conexionBD.AbrirConn();
+            using (SqlCommand cmd = new SqlCommand(query))
+            {
+                cmd.Parameters.AddWithValue("@Nombre", nombre);
+                cmd.Parameters.AddWithValue("@CategoriaId", id);
+                cmd.Connection = conn;
+                filas = cmd.ExecuteNonQuery();
+                conexionBD.CerrarConn();
+            }            
             return filas;
         }
     }

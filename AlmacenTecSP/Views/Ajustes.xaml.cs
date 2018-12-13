@@ -1,5 +1,7 @@
-﻿using System;
+﻿using AlmacenTecSP.Models;
+using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -20,9 +22,29 @@ namespace AlmacenTecSP.Views
     /// </summary>
     public partial class Ajustes : Page
     {
+        private CategoriaModel categorias;
+        private ConexionBD baseDeDatos;
         public Ajustes()
         {
             InitializeComponent();
+            categorias = new CategoriaModel();
+            llenarTabla();
+        }
+
+        private void BtnNuevaCategoria_Click(object sender, RoutedEventArgs e)
+        {
+            DialogoCategoria dialogo = new DialogoCategoria();            
+            if (dialogo.ShowDialog() == true)
+            {
+                categorias.NuevaCategoria(dialogo.Respuesta);
+                llenarTabla();
+            }
+        }
+
+        private void llenarTabla()
+        {
+            DataSet CategoriaDataSet = categorias.CargarCategorias();
+            TablaCategoria.ItemsSource = CategoriaDataSet.Tables[0].DefaultView;
         }
     }
 }
