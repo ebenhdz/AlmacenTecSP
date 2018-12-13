@@ -22,7 +22,6 @@ namespace AlmacenTecSP.Views
         public DialogoCategoria()
         {
             InitializeComponent();
-            txtNombreCategoria.Focus();
         }
         private void BtnGuardar_Click(object sender, RoutedEventArgs e)
         {
